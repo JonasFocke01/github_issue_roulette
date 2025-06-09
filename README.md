@@ -20,3 +20,7 @@ Pick a release, download the binary and GOGOGO
 
 Clone the repo and build with cargo: `cargo build -r`.
 The compiled binary will live in `/target/release/`.
+
+### Known issues
+
+Filtering for labels on github will do an AND search, while we do an OR search.
