@@ -44,8 +44,6 @@ fn main() {
         .args(["api", &uri, "--method", "GET", "--paginate"])
         .output();
 
-    println!("{:?}", args.labels_to_exclude);
-
     if let Ok(result) = result {
         let result = String::from_utf8_lossy(&result.stdout);
         let issues: Vec<Issue> = serde_json::from_str(&result).unwrap();
@@ -72,7 +70,6 @@ fn main() {
             .cloned()
             .collect();
 
-        println!("{}", issues.len());
         issues.shuffle(&mut rng());
 
         println!(
