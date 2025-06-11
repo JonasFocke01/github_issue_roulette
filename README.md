@@ -14,7 +14,8 @@ To include label 'kind-feature' and exclude label 'e-stm32':
 
 ## Installation
 
-Pick a release, download the binary and GOGOGO
+1. Install the [github cli](https://cli.github.com/) and authenticate
+2. Pick a release, download the binary and GOGOGO
 
 ### Building from source
 
